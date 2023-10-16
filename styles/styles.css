@@ -172,7 +172,7 @@ section {
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
-  height: 90%;
+  height: 70%;
   width: 68%;
   margin-left: 4rem;
   background-color: var(--color-black);
@@ -183,7 +183,7 @@ section {
   height: 100%;
   object-fit: cover;
   transition: all 0.4s ease-in-out;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
 }
 .header-content .left-header .image img:hover {
   filter: grayscale(0);
@@ -348,7 +348,7 @@ section {
 /*Timeline*/
 .timeline {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   padding-bottom: 3rem;
 }
@@ -727,6 +727,7 @@ section {
 
   .header-content .left-header .image {
     margin: 0 auto;
+    border-radius: 10px;
     width: 90%;
   }
 
