@@ -344,16 +344,40 @@
               </div> -->
             </div>
             <div class="right-contact">
-              <form class="contact-form" action="/mail" method="POST">
+              <form
+                id="mail-form"
+                class="contact-form"
+                action="/mail"
+                method="POST"
+              >
                 <div class="input-control i-c-2">
-                  <input type="text" name="name" required placeholder="YOUR NAME" />
-                  <input type="email" name="email" required placeholder="YOUR EMAIL" />
+                  <input
+                    id="name-form"
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="YOUR NAME"
+                  />
+                  <input
+                    id="mail-form"
+                    type="text"
+                    name="email"
+                    required
+                    placeholder="YOUR EMAIL"
+                  />
                 </div>
                 <div class="input-control">
-                  <input type="text" name="subject" required placeholder="ENTER SUBJECT" />
+                  <input
+                    id="subject-form"
+                    type="text"
+                    name="subject"
+                    required
+                    placeholder="ENTER SUBJECT"
+                  />
                 </div>
                 <div class="input-control">
                   <textarea
+                    id="text-form"
                     name="message"
                     id=""
                     cols="15"
@@ -361,14 +385,18 @@
                     placeholder="Message Here..."
                   ></textarea>
                 </div>
-                <div class="submit-btn">
-                  <button type="submit">
-                    <a class="main-btn">
-                      <span class="btn-text">Submit</span>
-                      <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
-                    </a>
-                  </button>
+                <!-- <button type="submit"> -->
+                <div class="submit-btn" id="send-mail" style="cursor: pointer">
+                  <a class="main-btn">
+                    <!-- <a > -->
+                    <span class="btn-text">Submit</span>
+                    <span class="btn-icon"
+                      ><i class="fas fa-paper-plane"></i
+                    ></span>
+                    <!-- </a> -->
+                  </a>
                 </div>
+                <!-- </button> -->
               </form>
             </div>
           </div>
